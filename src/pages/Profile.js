@@ -32,26 +32,9 @@ function Profile() {
         setSns((info && info.sns) || []);
     }, [info]);
 
-    const [name, setName] = useState("Reo Tamai");
-    const [note, setNote] = useState("Hello World");
-    const [sns, setSns] = useState([
-        {
-            type: "instagram",
-            userName: "reotam27",
-        },
-        {
-            type: "twitter",
-            userName: "oreoreoop",
-        },
-        {
-            type: "facebook",
-            userName: "reotam27",
-        },
-        {
-            type: "website",
-            userName: "reotam5.github.io",
-        },
-    ]);
+    const [name, setName] = useState("");
+    const [note, setNote] = useState("");
+    const [sns, setSns] = useState([]);
 
     const [qrData, setQrData] = useState(null);
     useEffect(() => {
