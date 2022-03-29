@@ -10,9 +10,9 @@ function SNSCard({ item, index, handleDelete }) {
 
     return (
         <>
-            <div class="flex w-full h-12 hover:bg-gray-50 px-4">
+            <div className="flex w-full h-12 hover:bg-gray-50 px-4">
                 <div
-                    class="w-2/12 h-full flex justify-center items-center"
+                    className="w-2/12 h-full flex justify-center items-center"
                     onClick={() => {
                         window.open(url);
                     }}
@@ -20,24 +20,24 @@ function SNSCard({ item, index, handleDelete }) {
                     <FontAwesomeIcon style={{ fontSize: 35 }} icon={icon} />
                 </div>
                 <div
-                    class="w-6/12 h-full flex items-start"
+                    className="w-6/12 h-full flex items-start"
                     onClick={() => {
                         window.open(url);
                     }}
                 >
-                    <p class="my-auto text-lg font-semibold">{title}</p>
+                    <p className="my-auto text-lg font-semibold">{title}</p>
                 </div>
                 <div
-                    class="w-4/12 h-full flex justify-end items-center"
+                    className="w-4/12 h-full flex justify-end items-center"
                     onClick={() => {
                         window.open(url);
                     }}
                 >
-                    <p class="text-sm pt-1 font-light text-gray-700">
+                    <p className="text-sm pt-1 font-light text-gray-700">
                         {userName}
                     </p>
                 </div>
-                <div class="w-4/12 h-full flex justify-end items-center">
+                <div className="w-4/12 h-full flex justify-end items-center">
                     <button onClick={()=>{handleDelete(index)}}>
                         <FontAwesomeIcon icon={faEraser} />
                     </button>

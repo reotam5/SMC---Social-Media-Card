@@ -6,7 +6,6 @@ function QRCodeTest({data}) {
   useEffect(() => {
     qrCode.append(ref.current);
     qrCode.update({data: data});
-    console.log(data);
   }, [data]);
 
   const qrCode = new QRCodeStyling({
